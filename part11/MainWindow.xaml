@@ -1,0 +1,106 @@
+﻿<Window x:Class="part11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:part11"
+        mc:Ignorable="d" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="700" AllowsTransparency="True" Background="Transparent">
+
+    <Border CornerRadius="30" Background="#ffffff" >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35*"/>
+                <ColumnDefinition Width="35*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <!--#first coloum -->
+            <Border Grid.Column="0" CornerRadius="30 120 120 30" Background="#1FA595
+
+">
+                <StackPanel>
+
+                    <Image Margin="0 10 0 0" Source="/Images/UniversityHat2.png"  Width="81" Height="53"/>
+
+                    <!--Logo NAME-->
+                    <TextBlock Style="{StaticResource Logotexts}" Text="Student LMS" Margin="30 0 30 0 "/>
+                    <TextBlock Style="{StaticResource Logotexts}" Text="System" Margin="30 0 30 0 "/>
+
+
+                    <!--logo Image -->
+                    <Ellipse  Height="196" Width="194">
+                        <Ellipse.Fill>
+                            <ImageBrush  ImageSource="/Images/StudentIcon.jpg"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock Text="Journey for engineers" HorizontalAlignment="Center" FontFamily="Inter" Foreground="White"
+                               FontSize="18"/>
+
+                </StackPanel>
+
+            </Border>
+            <!--#endregion-->
+
+
+
+            <!--#second coloum -->
+
+            <StackPanel Grid.Column="1" Grid.ColumnSpan="2">
+
+                <!--cut and minimum-->
+                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                    <Image x:Name="minimizeButton" PreviewMouseLeftButtonDown="minimizeButoon_PreviewMouseLeftButtonDown"  Margin="0 5 0 0"  Source="/Images/minimize.png" Height="18" Width="27" />
+                    <Image Margin="0 6 14 0" PreviewMouseLeftButtonDown="CloseButton_PreviewMouseLeftButtonDown"  Source="/Images/close.jpg" Height="18" Width="27" />
+                </StackPanel>
+
+                <TextBlock Text="Log In" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="35" FontFamily="impact" Margin="30 40 30 0 "/>
+
+
+
+                <!--Role-->
+                <TextBlock  Text="Role" Margin="30 20 0 3" Style="{StaticResource texts}" />
+                <ComboBox  Style="{StaticResource Coblocks}" >
+                    <ComboBoxItem>Student</ComboBoxItem>
+                    <ComboBoxItem>Teacher</ComboBoxItem>
+                </ComboBox>
+
+
+
+                <!--User-->
+                <TextBlock  Text="User Name" Margin="30 15 0 3" Style="{StaticResource texts}" />
+                <TextBox x:Name="UserText" Width="290" HorizontalAlignment="Left" Margin="30 0 0 0" Style="{StaticResource blocks}" TextChanged="TextBox_TextChanged"  />
+
+
+                <!--Password-->
+                <TextBlock  Text="Password" Margin="30 15 0 3" Style="{StaticResource texts}" />
+                <PasswordBox x:Name="PasswordText"  Style="{StaticResource Pblocks}"  />
+
+
+
+                <!--Log button-->
+                <Button x:Name="LogButton" Click="LogButton_Click" Content="Log In"  Style="{StaticResource LogButton}" >
+
+                </Button>
+
+                <!--Sign in-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <TextBlock Foreground="#312E81" Text="Don't have an account?"/>
+                    <Button x:Name="SignUpButton" Click="SignUpButton_Click" Style="{StaticResource signUpButton}" Content="Sign Up">
+
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+
+            <!--#endregion-->
+
+
+        </Grid>
+
+
+
+
+    </Border>
+</Window>

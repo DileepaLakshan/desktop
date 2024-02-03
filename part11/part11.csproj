@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\AngularPhoto.jpg" />
+    <None Remove="Images\close.jpg" />
+    <None Remove="Images\GraphQiPhoto.jpg" />
+    <None Remove="Images\HomePhoto.png" />
+    <None Remove="Images\minimize.png" />
+    <None Remove="Images\ProfilePhoto.png" />
+    <None Remove="Images\PythonPhot.jpg" />
+    <None Remove="Images\ReacktPhoto.jpg" />
+    <None Remove="Images\StudentIcon.jpg" />
+    <None Remove="Images\Teacher1.jpg" />
+    <None Remove="Images\Teacher2.jpg" />
+    <None Remove="Images\Teacher3.jpg" />
+    <None Remove="Images\Teacher4.jpg" />
+    <None Remove="Images\Teacher5.jpg" />
+    <None Remove="Images\TimeTable.jpg" />
+    <None Remove="Images\UniversityHat2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\AngularPhoto.jpg" />
+    <Resource Include="Images\GraphQiPhoto.jpg" />
+    <Resource Include="Images\HomePhoto.png" />
+    <Resource Include="Images\ProfilePhoto.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\close.jpg" />
+    <Resource Include="Images\minimize.png" />
+    <Resource Include="Images\PythonPhot.jpg" />
+    <Resource Include="Images\ReacktPhoto.jpg" />
+    <Resource Include="Images\StudentIcon.jpg" />
+    <Resource Include="Images\Teacher1.jpg" />
+    <Resource Include="Images\Teacher2.jpg" />
+    <Resource Include="Images\Teacher3.jpg" />
+    <Resource Include="Images\Teacher4.jpg" />
+    <Resource Include="Images\Teacher5.jpg" />
+    <Resource Include="Images\TimeTable.jpg" />
+    <Resource Include="Images\UniversityHat2.png" />
+  </ItemGroup>
+
+</Project>

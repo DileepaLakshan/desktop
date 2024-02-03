@@ -1,0 +1,109 @@
+﻿<Page x:Class="part11.Pages.TeachersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:part11.Pages"
+      mc:Ignorable="d" 
+      
+             d:DesignHeight="550" d:DesignWidth="800">
+    <StackPanel>
+
+        <!--Top Name-->
+        <TextBlock Margin="35 10 0 0" Text="Teachers" Grid.Row="4" FontSize="22" FontWeight="SemiBold"
+            Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <!-- Teachers-->
+
+        <!--Teacher01-->
+        <TextBlock Style="{StaticResource TeachersTextBlock}">
+            <Border CornerRadius="100" Margin="20 0 0 0" Width="60" Height="60" Padding="3" Background="White"  >
+
+                 <Ellipse>
+                         <Ellipse.Fill>
+                             <ImageBrush ImageSource="/Images/Teacher3.jpg"/>
+                         </Ellipse.Fill>
+                  </Ellipse>
+
+             </Border>
+             <StackPanel>
+                 <TextBlock Text="Dr Nimal Samarakone" FontSize="15" FontWeight="Bold"  />
+                 <TextBlock Text="courses : Web development ,Data Structher" Margin="0 0 0 10" VerticalAlignment="Center" FontSize="15" Foreground="Gray" />
+             </StackPanel>
+        </TextBlock>
+
+        <!--Teacher01-->
+        <TextBlock Style="{StaticResource TeachersTextBlock}">
+    <Border CornerRadius="100" Margin="20 0 0 0" Width="60" Height="60" Padding="3" Background="White"  >
+
+     <Ellipse>
+         <Ellipse.Fill>
+             <ImageBrush ImageSource="/Images/Teacher3.jpg"/>
+         </Ellipse.Fill>
+     </Ellipse>
+
+     </Border>
+     <StackPanel>
+         <TextBlock Text="Dr Sunil Hettiarachchi" FontSize="15" FontWeight="Bold"  />
+         <TextBlock Text="courses : Algoritham and Solving Problems, Web Princhiple" Margin="0 0 0 10" VerticalAlignment="Center" FontSize="15" Foreground="Gray" />
+     </StackPanel>
+</TextBlock>
+
+        <!--Teacher01-->
+        <TextBlock Style="{StaticResource TeachersTextBlock}">
+    <Border CornerRadius="100" Margin="20 0 0 0" Width="60" Height="60" Padding="3" Background="White"  >
+
+     <Ellipse>
+         <Ellipse.Fill>
+             <ImageBrush ImageSource="/Images/Teacher4.jpg"/>
+         </Ellipse.Fill>
+     </Ellipse>
+
+     </Border>
+     <StackPanel>
+         <TextBlock Text="Dr Nimal Samarakone" FontSize="15" FontWeight="Bold"  />
+         <TextBlock Text="courses = Web development ,Data Structher" Margin="0 0 0 10" VerticalAlignment="Center" FontSize="15" Foreground="Gray" />
+     </StackPanel>
+</TextBlock>
+
+
+        <!--Teacher01-->
+        <TextBlock Style="{StaticResource TeachersTextBlock}">
+    <Border CornerRadius="100" Margin="20 0 0 0" Width="60" Height="60" Padding="3" Background="White"  >
+
+     <Ellipse>
+         <Ellipse.Fill>
+             <ImageBrush ImageSource="/Images/Teacher1.jpg"/>
+         </Ellipse.Fill>
+     </Ellipse>
+
+     </Border>
+     <StackPanel>
+         <TextBlock Text="Dr Nimal Samarakone" FontSize="15" FontWeight="Bold"  />
+         <TextBlock Text="courses = Web development ,Data Structher" Margin="0 0 0 10" VerticalAlignment="Center" FontSize="15" Foreground="Gray" />
+     </StackPanel>
+</TextBlock>
+
+
+        <!--Teacher01-->
+        <TextBlock Style="{StaticResource TeachersTextBlock}">
+    <Border CornerRadius="100" Margin="20 0 0 0" Width="60" Height="60" Padding="3" Background="White"  >
+
+     <Ellipse>
+         <Ellipse.Fill>
+             <ImageBrush ImageSource="/Images/Teacher5.jpg"/>
+         </Ellipse.Fill>
+     </Ellipse>
+
+     </Border>
+     <StackPanel>
+         <TextBlock Text="Dr Nimal Samarakone" FontSize="15" FontWeight="Bold"  />
+         <TextBlock Text="courses = Web development ,Data Structher" Margin="0 0 0 10" VerticalAlignment="Center" FontSize="15" Foreground="Gray" />
+     </StackPanel>
+   </TextBlock>
+
+
+
+
+    </StackPanel>
+</Page>
